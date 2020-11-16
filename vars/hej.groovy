@@ -1,7 +1,7 @@
 
 def call() {
 	println "Hej"
-	sh("python3 '/Users/henrikpersson/.jenkins/workspace/Pipeline Job@libs/JENKINS_TEST/vars/Pytest/test_capitalize.py' ")
+	sh("pytest -v --alluredir .")
 	//archiveArtifacts artifacts: '**', fingerprint: true
 }
 
