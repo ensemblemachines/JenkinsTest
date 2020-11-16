@@ -1,8 +1,7 @@
 
 def call() {
 	println "Hej"
-	sh("cd vars")
-	sh("ls")
+	sh("pwd")
 	archiveArtifacts artifacts: '**', fingerprint: true
 }
 
