@@ -14,6 +14,3 @@ def test_capital_case1():
 def test_capital_case2():
     assert capital_case('semaphore') == 'Semaphore'
     
-@severity(severity_level.CRITICAL)
-def test_capital_case3():
-    assert capital_case('semaphore') == 'semaphore'
